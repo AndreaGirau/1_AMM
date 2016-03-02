@@ -1,3 +1,5 @@
+Riporterò per ogni Task i comandi utilizzati sul terminale, se richiesto anche cosa trovato.
+
 Task 1
 
 telnet spano.sc.unica.it 80
@@ -59,3 +61,22 @@ host: spano.sc.unica.it
 Task 5
 
 http://spano.sc.unica.it/httpTest/index.php?alunno=andrea&chiave=valore
+
+Task 6
+
+telnet spano.sc.unica.it 80
+
+POST /httpTest/index.php HTTP/1.1
+host: spano.sc.unica.it
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 27
+
+alunno=andrea&chiave=valore
+
+Task 7
+
+telnet spano.sc.unica.it 80
+
+GET /httpTest/checkBrowser.php HTTP/1.1 
+host: spano.sc.unica.it
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22
