@@ -12,6 +12,8 @@ Set-Cookie: PHPSESSID=0covnmf5k032k0pvlhkbuo30n6; path=/
 
 Task 3
 
+Non ruscendo ad accedere a google attraverso: telnet www.google.com
+ho utilizzato sempre: telnet spano.sc.unica.it 80
 con la Get:
 
 HTTP/1.1 200 OK
