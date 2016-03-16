@@ -14,23 +14,24 @@ and open the template in the editor.
     </head>
     <body>
         <!--
-            Titolo con breve descrizione
+            Sezone di navigazione per il Login
+        -->
+        <nav> 
+            <a href="login.html"> Login </a>
+        </nav>
+        
+        <!--
+            Nome del sito
         -->
         <h1> AG Movies </h1>
-        <p>
-            Benvenuto in AG Movies, dove troverai migliaia di titoli di DVD e Blu-Ray, 
-            anche in anteprima mondiale. Spedizioni in tutto il globo. Film, serie tv, 
-            documentari, anime e cartoni animati, tutto quello che cerchi lo troverai qua!
-            E' presente anche una sezione di vendita dell'usato, compriamo i vostri DVD o Blu-Ray
-            supervalutandoli. In alternativa all'acquisto dei nostri titoli è presente una sezione
-            per noleggiarli. Troverai i link alle sezioni a fondo pagina. Per maggiori informazioni 
-            continuate a leggere, buona permanenza nel nostro sito!
-        </p>
         
         <!--
             Sommario con link interni per favorire la navigazione sul sito
         -->
         <ol>
+            <li>
+                <a href="#welcome"> Benvenuto! </a>
+            </li>
             <li>
                 <a href="#categories"> Catalogo </a>
             </li>
@@ -46,15 +47,28 @@ and open the template in the editor.
             <li>
                 <a href="#guide"> Guida all'acquisto </a>
             </li>
-            <li>
-                <a href="#menu"> Menù: accedi a tutte le funzionalità (login, compra, noleggia, vendi). </a>
-            </li>
         </ol>
         
-        <!-- Macrocategorie film -->
+        <!-- 
+            Introduzione al sito 
+        -->
+        <h2 id="welcome"> Benvenuto! </h2>
+        <p>
+            Benvenuto in AG Movies, dove troverai migliaia di titoli di DVD e Blu-Ray, 
+            anche in anteprima mondiale. Spedizioni in tutto il globo. Film, serie tv, 
+            documentari, anime e cartoni animati, tutto quello che cerchi lo troverai qua!
+            E' presente anche una sezione di vendita dell'usato, compriamo i vostri DVD o Blu-Ray
+            supervalutandoli. In alternativa all'acquisto dei nostri titoli è presente una sezione
+            per noleggiarli. Troverai i link alle sezioni a fondo pagina. Per maggiori informazioni 
+            continuate a leggere, buona permanenza nel nostro sito!
+        </p>
+        
+        <!-- 
+            Macrocategorie film 
+        -->
         <h2 id="categories"> Catalogo </h2>
         <p>
-            Il nostro ampio catalogo comprende la lista sotto elencata in ordine alfabetico:
+            Il nostro catalogo comprende la lista di categorie sotto elencata in ordine alfabetico:
         </p>    
             <ul>
                 <li> Animazione </li>
@@ -69,14 +83,14 @@ and open the template in the editor.
                 <li> Western </li>
             </ul>
 
-        <h2 id="news"> Novità e Best Seller</h2>
+        <h3 id="news"> Novità e Best Seller</h3>
         <p>
             Ogni settimana migliaia di nuovi titoli, anteprime, nuove edizioni ma anche i titoli
             più famosi, vengono aggiunti a prezzi imbattibili al fine di permettere una completa 
             esperienza d'acquisto, come se entraste di persona nel nostro negozio. 
         </p>
         
-        <h2 id="gift"> Cofanetti e idee regalo </h2>
+        <h3 id="gift"> Cofanetti e idee regalo </h3>
         <p>
             Non sai cosa regalare? Trovrai nel nostro sito cofanetti delle più famose saghe 
             cinematografiche e non solo. Sorprendi con regali originali e introvabili i tuoi amici, 
@@ -84,7 +98,7 @@ and open the template in the editor.
             Il Signore Degli Anelli, ma anche i film Marvel come Spiderman o la serie X-Men.
         </p>
         
-        <h2 id="gadget"> Gadget </h2>
+        <h3 id="gadget"> Gadget </h3>
         <p>
             E' presente una sezione in cui potrai comprare i gadget dei film più famosi. Vuoi l'Anello
             della saga "Il Signore Degli Anelli" per una super proposta di matrimonio? Qua lo troverai! 
@@ -99,23 +113,6 @@ and open the template in the editor.
             aggiungi al carrello! Reso gratuito entro 30 giorni dalla data dell'acquisto. Scegli se 
             comprare, noleggiare o vendere.
         </p>
-        
-        <!-- Menù con il quale si può accedere alle pagine  di login, per il compratore e il venditore -->
-        <h3 id="menu"> Menù: </h3>
-        <ol>
-            <li>
-                <a href="login.html"> Login </a>
-            </li>
-            <li>
-                <a href="cliente.html"> Compra </a>
-            </li>
-            <li>
-                <a href="cliente.html"> Noleggia </a>
-            </li>
-            <li>
-                <a href="venditore.html"> Vendi </a>
-            </li>
-        </ol>
         
     </body>
 </html>

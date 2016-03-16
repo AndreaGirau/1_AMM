@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title> AG Movies: Login</title>
+        <title> AG Movies Login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Andrea Girau">
@@ -17,18 +17,32 @@ and open the template in the editor.
         <h2> Login </h2>
         <form method="GET">
             <div>
-                <label for="username"> User </label>
-                <input type="text" name="username" id="username" value="Inserisci nome"/>
+                <label for="username"> Username </label>
+                <input type="text" name="username" id="username" value="Username"/>
                   
                 <label for="password"> Password </label>
-                <input type="password" name="password" id="pswd" value="ananas"/>
-            </div>        
-        
-        <div>            
-            <!-- Pulsanti submit e reset per user e password -->
-            <input type="submit" value="invia">
-            <input type="reset" value="cancella">
-        </div>
+                <input type="password" name="password" id="password" value="password"/>
+            </div>
+            <div>
+                <!-- Pulsanti submit e reset per user e password -->
+                <input type="submit" value="invia">
+                <input type="reset" value="cancella">
+            </div>
         </form>
+        
+        <nav>
+            <ul>
+                <li>
+                    <a href="descrizione.html"> Home </a>
+                </li>
+                <li>
+                    <a href="cliente.html"> Compra </a>
+                </li>
+                <li> 
+                    <a href="venditore.html"> Vendi </a>
+                </li>
+            </ul>
+        </nav>
+        
     </body>
 </html>
