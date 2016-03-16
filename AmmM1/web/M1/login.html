@@ -6,11 +6,29 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title> AG Movies: Login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Andrea Girau">
+        <meta name="keywords" content="film, dvd, blu-ray, AG, movies">
     </head>
     <body>
-        <div>TODO write content</div>
+        <h1> AG Movies </h1>
+        <h2> Login </h2>
+        <form method="GET">
+            <div>
+                <label for="username"> User </label>
+                <input type="text" name="username" id="username" value="Inserisci nome"/>
+                  
+                <label for="password"> Password </label>
+                <input type="password" name="password" id="pswd" value="ananas"/>
+            </div>        
+        </form>
+        
+        <div>            
+            <!-- Pulsanti submit e reset per user e password -->
+            <input type="submit" value="invia">
+            <input type="reset" value="cancella">
+        </div>
     </body>
 </html>
