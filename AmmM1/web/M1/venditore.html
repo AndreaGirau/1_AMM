@@ -6,11 +6,67 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title> AG Movies&Books Vendi </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Andrea Girau">
+        <meta name="keywords" content="film, dvd, blu-ray, AG, movies, books, libri, best, sellers">
     </head>
     <body>
-        <div>TODO write content</div>
+        <!--
+            Sezone di navigazione per navigare nelle altre pagine del sito
+        -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="descrizione.html"> Home </a>
+                </li>
+                <li>
+                    <a href="login.html"> Login </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <!-- Nome sito -->
+        <h1> AG Movies&Books </h1>
+        
+        <h2> Vendi </h2>
+        <!--
+            Form per l'inserimento di un prodotto che un cliente vorrebbe vendere
+        -->
+        <form method="GET">
+            <!-- Inserimento nome oggetto -->
+            <div>
+                <label for="NomeOggetto"> Nome di cosa vorresi vendere </label>
+                <input type="text" name="NomeOggetto" id="NomeOggetto"/>
+            </div>
+        <!-- Inserimento url foto oggetto -->
+            <div>
+                <label for="FotoOggetto"> Copiare la url della foto descrittiva </label>
+                <input type="url" name="FotoOggetto" id="FotoOggetto"/>
+            </div>
+        <!-- Inserimento testo con descrizione oggetto -->
+            <div>
+            <label for="DescrizioneOggetto"> Descrizione </label>
+            <textarea name="DescrizioneOggetto" id="DescrizioneOggetto"
+                      cols="40" rows="10"> Scrivi qui.. </textarea>
+            </div>
+        <!-- Inserimento prezzo oggetto -->
+            <div>
+                <label for="Prezzo"> Prezzo </label>
+                <input type="number" name="Prezzo" id="Prezzo">
+            </div>
+        <!-- Inserimento descrizione oggetto -->
+            <div>
+                <label for="Quantità"> Quantità </label>
+                <input type="number" name="Quantità" id="Quantità">
+            </div> 
+        
+            <div>
+                <!-- Pulsanti submit e reset -->
+                <input type="submit" value="invia">
+                <input type="reset" value="cancella">
+            </div>
+        </form>
     </body>
 </html>
