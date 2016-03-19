@@ -13,22 +13,10 @@ and open the template in the editor.
         <meta name="keywords" content="film, dvd, blu-ray, AG, movies, books, libri, best, sellers">
     </head>
     <body>
+        <!--
+            Nome del sito
+        -->
         <h1> AG Movies&Books </h1>
-        <h2> Login </h2>
-        <form method="GET">
-            <div>
-                <label for="username"> Username </label>
-                <input type="text" name="username" id="username" value="Username"/>
-                  
-                <label for="password"> Password </label>
-                <input type="password" name="password" id="password" value="password"/>
-            </div>
-            <div>
-                <!-- Pulsanti submit e reset per user e password -->
-                <input type="submit" value="invia">
-                <input type="reset" value="cancella">
-            </div>
-        </form>
         
         <!--
             Sezone di navigazione per navigare nelle altre pagine del sito
@@ -46,6 +34,21 @@ and open the template in the editor.
                 </li>
             </ul>
         </nav>
+        
+        <h2> Login </h2>
+        <div class="input-form">
+            <form method="GET">
+                <!-- Inserimento username -->
+                <label for="username"> Username </label>
+                <input type="text" name="username" id="username" value="Username"/>
+                <!-- Inserimento password -->
+                <label for="password"> Password </label>
+                <input type="password" name="password" id="password" value="password"/>
+                <!-- Pulsanti submit e reset per user e password -->
+                <input type="submit" value="invia">
+                <input type="reset" value="cancella">  
+            </form>
+        </div>
         
     </body>
 </html>
