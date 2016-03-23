@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6
     Inoltre, fare in modo che il testo sia sottolineato e in grassetto quando il mouse passa sopra 
     il link.
 */
-a:link
+a:link, a:visited
 {
     color: #9e1616;
 }
