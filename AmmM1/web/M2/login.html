@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title> AG Movies&Books Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Andrea Girau">
+        <meta name="keywords" content="film, dvd, blu-ray, AG, movies, books, libri, best, sellers">
+        <!-- link al file style.css -->
+        <link href="./style.css" rel="stylesheet"  type="text/css" media="screen">
+    </head>
+    <body>
+        <div id="page">
+            <header>
+                <div id="header">
+                    <!--
+                        Nome del sito
+                    -->
+                    <h1> AG Movies&Books </h1>
+
+                    <div class="navigation">
+                        <!--
+                            Sezione di navigazione per navigare nelle altre pagine del sito
+                        -->
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="descrizione.html"> Home </a>
+                                </li>
+                                <li>
+                                    <a href="cliente.html"> Compra </a>
+                                </li>
+                                <li> 
+                                    <a href="venditore.html"> Vendi </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <div id="contentForm">
+                <h2 class="contentTitle"> Login </h2>
+                <div class="input-form" id="form">
+                    <form method="GET">
+                        <!-- Inserimento username -->
+                        <label for="username"> Username: </label>
+                        <input type="text" name="username" value="Username"/>
+                        <!-- Inserimento password -->
+                        <label for="password"> Password: </label>
+                        <input type="password" name="password" value="password"/>
+                        <!-- Pulsanti submit e reset per user e password -->
+                        <input type="submit" value="invia">
+                        <input type="reset" value="cancella">  
+                    </form>
+                </div>
+            </div>    
+            <div id="footer">   
+                <h3> Contact us on: </h3>
+                <a href="https://www.facebook.com">
+                    <img src="img/facebook.png"
+                    title="Facebook" alt="Facebook"
+                    width="40" height="40">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="img/twitter.png"
+                    title="Twitter" alt="Twitter"
+                    width="40" height="40">
+                </a>
+                <p> Andrea Girau matricola 65042 </p>
+            </div>
+        </div>
+    </body>
+</html>
