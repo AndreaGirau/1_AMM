@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title> AG Movies&Books Vendi </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Andrea Girau">
+        <meta name="keywords" content="film, dvd, blu-ray, AG, movies, books, libri, best, sellers">
+    </head>
+    <body>
+        <!-- Nome sito -->
+        <h1> AG Movies&Books </h1>
+        
+        <!--
+            Sezone di navigazione per navigare nelle altre pagine del sito
+        -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="descrizione.html"> Home </a>
+                </li>
+                <li>
+                    <a href="login.html"> Login </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <h2> Vendi </h2>
+        <!--
+            Form per l'inserimento di un prodotto che un cliente vorrebbe vendere
+        -->
+        <div class="input-form">
+            <form method="GET">
+                <!-- Inserimento nome oggetto -->
+                <label for="NomeOggetto"> Nome di cosa vorresi vendere </label>
+                <input type="text" name="NomeOggetto" id="NomeOggetto"/>
+                <!-- Inserimento url foto oggetto -->
+                <label for="FotoOggetto"> Copiare la url della foto descrittiva </label>
+                <input type="url" name="FotoOggetto" id="FotoOggetto"/>
+                <!-- Inserimento testo con descrizione oggetto -->
+                <label for="DescrizioneOggetto"> Descrizione </label>
+                <textarea name="DescrizioneOggetto" id="DescrizioneOggetto"
+                          cols="40" rows="10"> Scrivi qui.. </textarea>
+                <!-- Inserimento prezzo oggetto -->
+                <label for="Prezzo"> Prezzo </label>
+                <input type="number" name="Prezzo" id="Prezzo">
+                <!-- Inserimento descrizione oggetto -->
+                <label for="Quantità"> Quantità </label>
+                <input type="number" name="Quantità" id="Quantità">
+                <!-- Pulsanti submit e reset -->
+                <input type="submit" value="invia">
+                <input type="reset" value="cancella">
+            </form>
+        </div>
+    </body>
+</html>
