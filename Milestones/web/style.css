@@ -1,0 +1,443 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30-mar-2016, 21.51.03
+    Author     : andrea
+*/
+
+/* Proprietà generale corpo del sito */
+body
+{
+    font: 14px/20px "Arial", Open Sans, sans-serif;
+    color: black;
+    background-color: #500000;
+}
+/* Proprietà della pagina, che conterrà header, sidebar se ci saranno link interni, content e footer */
+#page
+{
+    position: relative;
+}
+/* Proprietà generali header */
+#header
+{
+    position: relative;
+    background-image: url('img/bomber.jpg');
+}
+#header, #footer
+{ 
+    color: #f5a33e;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+/* Proprietà generali sidebar (per pagine descrizione.html e cliente.html) */
+#sidebar
+{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #add8e6; 
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+/* Proprietà generali content */
+#content
+{
+    background-color: whitesmoke;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+#contentForm
+{
+    background-color: whitesmoke;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+/* Proprietà generali form delle pagine login.html e venditore.html */
+.input-form
+{
+    padding: 40px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    background-color: #add8e6;
+    border: 1px solid grey;
+    border-radius: 10px;
+    text-align: center;
+}
+/* Proprietà generali footer */
+#footer
+{
+    margin-top: -2px;
+    background-color: #add8e6;
+    text-align: left;
+    padding-top: 20px;
+}
+#footer ul li
+{   
+    list-style-type: none;  
+}
+
+#footer a img
+{
+    float: left;
+    margin-left: 20px;
+    margin-right: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-right: 0%;
+}
+#footer p
+{
+    color: black;
+    text-align: right;
+    margin-right: 20px;
+}
+/* Visualizzazione superiore ai 1024px, layout a due colonne con sidebar e content */
+@media only screen and (min-width: 1024px)
+{
+    #page
+    {
+        margin: 5%;
+    }
+
+    #header, #footer
+    {
+        height: 150px;
+    }
+    
+    h1
+    {
+        font-size: 60px;
+    }
+    .navigation a
+    {
+        margin-top: 25px;
+    }
+    #sidebar
+    {
+        float: left;
+        margin-top: -12px;
+        width: 250px;
+        height: 200px;
+    }
+
+    #content
+    {
+        margin-left: 252px;
+        margin-top: -12px;
+    }
+    #contentForm
+    {
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: -12px;
+    }
+    
+    .input-form
+    {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    
+    table, th, td
+    {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+}
+/* Visualizzazione tra i 480 e i 1024px, layout a due colonne con sidebar e content */
+@media only screen and (min-width: 480px) and (max-width: 1024px)
+{
+    #page
+    {
+        margin: 5%;
+    }
+
+    #header, #footer
+    {
+        height: 140px;
+        min-width: 900px;
+    }
+    h1
+    {
+        font-size: 55px;
+    }
+    .navigation a
+    {
+        margin-top: 25px;
+    }
+    #sidebar
+    {
+        float: left;
+        margin-top: -12px;
+        width: 250px;
+        border-radius: 10px;
+    }
+
+    #content
+    {
+        margin-left: 252px;
+        margin-top: -12px;
+        min-width: 648px;
+    }
+    #contentForm
+    {
+        margin-top: -12px;
+        width: 800px;
+        margin-left: 50px;
+    }
+    .input-form
+    {
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+    table, th, td
+    {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+}
+/* Visualizzazione inferiore ai 480px, layout a una colonna con largezza fissa a 480 */
+@media only screen and (max-width: 480px)
+{
+    #header, #footer
+    {
+        height: 130px;
+        min-width: 480px;
+    }
+    
+    .navigation ul
+    {
+        top: 110px;
+
+    }
+    h1
+    {
+        font-size: 35px;
+    }
+    .navigation ul
+    {
+        left: -30px;
+    }
+    
+    #sidebar
+    {
+        height: 10%;
+        margin-top: -2px;
+        min-width: 480px;
+    }
+
+    #content
+    {
+        margin-top: -2px;
+        min-width: 480px;
+    }
+    #contentForm
+    {
+        margin-top: -2px;
+        min-width: 480px;
+    }
+    .input-form
+    {
+        margin-left: -1px;
+        margin-right: -1px;
+    }
+}
+/* Propietà generali titoli, liste, id vari */
+h1
+{
+    font-family: "Arial", Open Sans, serif;
+    padding-top: 10px;
+    font-style: italic;
+    text-align: center;
+}
+h2, h3
+{
+    font-family: "Open Sans", Arial, serif;
+    margin-top: 0px;
+    color: darkblue;
+}
+ul
+{
+    margin: 0px;
+}
+ul.descrizione
+{
+    margin: 8px;
+}
+
+#sidebar h2
+{
+    text-align: center;
+}
+#sidebar a
+{
+    font-size: 14px;
+    font-family: "Arial", Open Sans, serif;
+    text-decoration: none;
+}
+#sidebar a:hover
+{
+    background-color: lightblue;
+    color: white;
+}
+.contentTitle
+{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 30px;
+    font-family: "Arial", Open Sans, serif;
+}
+#content h2, h3, p
+{
+  margin-left: 15px; 
+  margin-right: 15px; 
+}
+/* Proprietà sezione di navigazione */
+.navigation ul li
+{
+    list-style-type: none;
+}
+.navigation a
+{
+    font-family: "Arial", Open Sans, serif;
+    font-weight: bold;
+    margin-right: 15px;
+    float: left;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: 1px solid grey; 
+    border-radius: 6px;
+    width: 70px;
+    text-align: center;
+    background-color: #0084ff;
+}
+.navigation ul
+{
+    position: absolute;
+    width: 100%;
+    
+}
+.navigation a:hover
+{
+    background-color: blue;
+    color: white;
+    border: 1px solid grey; 
+    border-radius: 6px;
+}
+.navigation a:focus
+{
+    background-color: red;
+    color: white; 
+    border: 1px solid grey; 
+    border-radius: 6px;
+}
+/* Proprietà delle tabelle della pagina cliente.html */
+caption
+{
+    font-family: "Arial", Open Sans, serif;
+    font-size: 30px;
+    color: darkblue;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+.intestazione
+{
+    background-color: darkblue;
+    color: white;
+}
+table, th, td
+{
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 3px 5px;
+}
+th
+{
+    font-family: "Arial", Open Sans, serif;
+    text-align: left;
+    padding-right: 30px;
+}
+td
+{
+    font-family: "Arial", Open Sans, sans-serif;
+    text-align: center;
+}
+/*.dispari td
+{
+    background-color: #add8e6;
+}
+.pari td
+{
+    background-color: 
+}*/
+tr:nth-child(even){
+    background-color: lightgray;
+}
+td a:hover
+{
+    color: white;
+}
+/* Proprietà form delle pagine login.html e venditore.html */
+#form input[type="text"], input[type="password"], input[type="url"], input[type="number"], textarea
+{
+    width: 80%;
+    height: 40%;
+    padding-left: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    background-color: activeborder;
+}
+#form input[type="text"]:focus, input[type="password"]:focus,input[type="url"]:focus, input[type="number"]:focus, textarea:focus
+{
+    background-color: lightgray;
+}
+#form input[type="submit"], input[type="reset"]
+{
+    width: 25%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+    margin-top: 3%;
+    background-color: #0084ff;
+    color: white;
+}
+#form textarea
+{
+    height: 150px;
+    resize: none; 
+}
+#form input[type="submit"]:hover, input[type="reset"]:hover
+{
+    background-color: blue;
+    color: white;
+    border: 1px solid grey; 
+    border-radius: 6px;
+}
+#form input[type="reset"]
+{
+    margin-left: 0%;
+}
+#form label
+{
+    display: block;
+    margin-left: 0px;
+    font-size: 20px;
+    font-family: "Arial", Open Sans, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 14px;
+}
